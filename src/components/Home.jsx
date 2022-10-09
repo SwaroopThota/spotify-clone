@@ -6,7 +6,7 @@ const Home = () => {
 	const { featuredPlaylists } = useContext(context)
 	return (
 		<>
-			<div className='banner'></div>
+			<div className='banner d-sm-block d-none'></div>
 			<div className='container-fluid p-3'>
 				{featuredPlaylists.map(({ title, songs }) => (
 					<SongsRow songs={songs} title={title} key={title} />

@@ -5,7 +5,7 @@ import SongsRow from './SongsRow'
 const Playlist = () => {
 	const { userPlaylists } = useContext(context)
 	return (
-		<div className='p-5'>
+		<div className='p-sm-5 p-3'>
 			<div className='d-flex justify-content-between'>
 				<h3>Playlists</h3>
 				<button className='btn btn-outline-primary'>

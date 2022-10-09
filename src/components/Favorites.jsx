@@ -3,7 +3,7 @@ import { context } from './context/Context'
 const Favorites = () => {
 	const { favoriteTracks, addToQueue } = useContext(context)
 	return (
-		<div className='p-5'>
+		<div className='p-sm-5 p-3'>
 			<h3>Your Favorites:</h3>
 			{favoriteTracks.map((track, i) => (
 				<div

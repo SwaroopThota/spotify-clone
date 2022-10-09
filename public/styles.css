@@ -3,34 +3,33 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.row{
+.row {
 	margin: 0 !important;
 }
-.row>*{
+.row > * {
 	padding: 0 !important;
 }
-nav {
+aside {
 	height: 100vh;
-	top:0;
+	top: 0;
+	position: sticky;
 	background-color: #6610f2;
-	justify-content: center;
-	flex-direction: column;
 	padding: 0 0 10rem 0 !important;
 }
-nav a{
+aside a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.429);
 	cursor: pointer;
 	transition: all 200ms;
 }
-nav a:hover{
-    color: white !important;
+aside a:hover {
+	color: white !important;
 	background-color: #2a10f2;
 }
-.active{
+.active {
 	color: white !important;
 }
-.banner{
+.banner {
 	height: 30vh;
 	background-image: url('https://deadline.com/wp-content/uploads/2022/05/Spotify-logo-2.png');
 	background-repeat: no-repeat;
@@ -38,9 +37,23 @@ nav a:hover{
 	background-size: cover;
 }
 
-.pointer{
+.pointer {
 	cursor: pointer;
 }
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
+}
+
+@media only screen and (max-width: 576px) {
+	aside {
+		height: max-content;
+		z-index: 5;
+		position: relative;
+	}
+	#temp {
+		height: 0;
+		overflow: hidden;
+		transform-origin: top;
+		transition: height 0.5s ease;
+	}
 }

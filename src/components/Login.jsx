@@ -12,7 +12,7 @@ function Login() {
 				className='btn btn-lg fw-semibold'
 				style={{ backgroundColor: '#1DB954', color: '#191414' }}
 			>
-				<i class='bi bi-spotify text-black'></i> Login with Spotify
+				<i className='bi bi-spotify text-black'></i> Login with Spotify
 			</a>
 		</div>
 	)
